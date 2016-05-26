@@ -2,7 +2,7 @@
 
 It's time for you to be cool using awesome `Deal With It!` sunglass.
 
-[Rafsun is Cool](rafsun.gif)
+![Rafsun is Cool](rafsun.gif)
 
 Thsi program works through the following steps.
 
