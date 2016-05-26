@@ -74,7 +74,7 @@ void DealWithIt::animate(Point &from, Point &to)
     double m = atan2(to.y-from.y, to.x-from.x);
     m *= 180.0 / M_PI;
 
-    for(int y=from.y, i=0; y<=to.y; y++, i++)
+    for(int y=from.y/*, i=0, f=0*/; y<=to.y; y++/*, i++*/)
     {
         int x = to.x + (y/m);
 
@@ -87,14 +87,20 @@ void DealWithIt::animate(Point &from, Point &to)
         /*
          * GIF GENERATOR
          */
-        //char filename[20] = {};
-        //sprintf(filename, "frame_%03d.jpg", i);
-        //imwrite(filename, draw);
+        /*
+        char filename[20] = {};
+        sprintf(filename, "gif/frame_%03d.jpg", f);
+        if(i%10 == 0)
+        {
+            imwrite(filename, draw);
+            f++;
+        }
+        */
 
         waitKey(1);
     }
 
-    log << "Press any key to quit\n";
+    log << "Press any key\n";
 
     waitKey(0xFFFFFF);
 }

@@ -2,6 +2,8 @@
 
 It's time for you to be cool using awesome `Deal With It!` sunglass.
 
+[Rafsun is Cool](rafsun.gif)
+
 Thsi program works through the following steps.
 
 1. Detect face from an image you provide
@@ -16,3 +18,4 @@ Thsi program works through the following steps.
 * GIF and MP4 exporter
 * Manual eye selection and animator
 * Web/PC/Android app
+* Fix last frame delay
